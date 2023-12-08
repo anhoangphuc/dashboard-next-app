@@ -18,6 +18,8 @@ export async function fetchRevenue() {
   noStore();
 
   try {
+    console.log(`Fetching revenue data...`);
+    await new Promise((resolve) => setTimeout(resolve, 3000));
     // Artificially delay a response for demo purposes.
     // Don't do this in production :)
 
